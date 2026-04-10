@@ -11,7 +11,7 @@ sap.ui.define([
 ], function (BaseObject, Filter, FilterOperator, Sorter) {
     "use strict";
 
-    return BaseObject.extend("sap.dm.custom.plugin.worklistfilterandsort.ExtensionUtilities", {
+    return BaseObject.extend("rits.ext.custom.plugins.ExtensionUtilities", {
         constructor: function () {
             this._bLogToConsole = true;
             this._sCurrentStatusFilter = "ALL";

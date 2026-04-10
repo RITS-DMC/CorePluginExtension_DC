@@ -22,7 +22,7 @@ sap.ui.define([
              ToolbarSpacer, ToolbarSeparator, Item, Filter, FilterOperator, Sorter) {
     "use strict";
 
-    return PluginControllerExtension.extend("sap.dm.custom.plugin.worklistfilterandsort.CreateExtension", {
+    return PluginControllerExtension.extend("rits.ext.custom.plugins.CreateExtension", {
         constructor: function (oExtensionUtilities) {
             this._oExtensionUtilities = oExtensionUtilities;
             this._oTable = null;

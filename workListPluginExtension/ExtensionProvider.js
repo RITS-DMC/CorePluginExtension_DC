@@ -3,18 +3,18 @@
  */
 sap.ui.define([
     "sap/dm/dme/podfoundation/extension/PluginExtensionProvider",
-    "sap/dm/custom/plugin/worklistfilterandsort/LifecycleExtension",
-    "sap/dm/custom/plugin/worklistfilterandsort/CreateExtension",
-    "sap/dm/custom/plugin/worklistfilterandsort/PluginEventExtension",
-    "sap/dm/custom/plugin/worklistfilterandsort/PropertyEditorExtension",
-    "sap/dm/custom/plugin/worklistfilterandsort/ExtensionUtilities"
+    "rits/ext/custom/plugins/workListPluginExtension/LifecycleExtension",
+    "rits/ext/custom/plugins/workListPluginExtension/CreateExtension",
+    "rits/ext/custom/plugins/workListPluginExtension/PluginEventExtension",
+    "rits/ext/custom/plugins/workListPluginExtension/PropertyEditorExtension",
+    "rits/ext/custom/plugins/workListPluginExtension/ExtensionUtilities"
 ], function (PluginExtensionProvider, LifecycleExtension, CreateExtension, 
              PluginEventExtension, PropertyEditorExtension, ExtensionUtilities) {
     "use strict";
 
     console.log("=== WorklistFilterSort ExtensionProvider LOADED ===");
 
-    return PluginExtensionProvider.extend("sap.dm.custom.plugin.worklistfilterandsort.ExtensionProvider", {
+    return PluginExtensionProvider.extend("rits.ext.custom.plugins.ExtensionProvider", {
         constructor: function () {
             console.log("=== WorklistFilterSort ExtensionProvider CONSTRUCTOR ===");
             this.oExtensionUtilities = new ExtensionUtilities();

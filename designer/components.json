@@ -2,12 +2,55 @@
     "components": [],
     "extensions": [
         {
-            "provider": "sap/dm/custom/plugin/worklistfilterandsort/ExtensionProvider",
+            "provider": "rits/ext/custom/plugins/workListPluginExtension/ExtensionProvider",
             "controller": "sap.dm.dme.plugins.worklistPlugin",
             "inclusions": [
                 {
-                    "pods": ["CUSTOMPOD1"],
-                    "plants": ["1710"]
+                    "pods": ["WC_POD_COPY_AP","WC POD FOR PLUGIN EXTENSION","WC_POD_GK"],
+                    "plants": ["1710","R49","TRN1"]
+                }
+            ]
+        },
+        {
+            "provider": "rits/ext/custom/plugins/assemblyPluginExtension/ExtensionProvider",
+            "controller": "sap.dm.dme.assyplugins.assemblyPointPlugin",
+            "inclusions": [
+                
+                {
+                    "pods": [
+                        "WC_POD_COPY_AP","WC_POD_GK"
+                    ],
+                    "plants": [
+                        "TRN1"
+                    ]
+                }
+            ]
+        },
+        {
+            "provider": "rits/ext/custom/plugins/dataCollectionEntryPluginExtension/ExtensionProvider",
+            "controller": "sap.dm.dme.dcplugins.dataCollectionEntryPlugin",
+            "inclusions": [
+                {
+                    "pods": [
+                        "WC_POD_COPY_AP","WC_POD_GK","R49 WC POD"
+                    ],
+                    "plants": [
+                        "TRN1","R49"
+                    ]
+                }
+            ]
+        },
+        {
+            "provider": "rits/ext/custom/plugins/dataCollectionListPluginExtension/ExtensionProvider",
+            "controller": "sap.dm.dme.dcplugins.dataCollectionListPlugin",
+            "inclusions": [
+                {
+                    "pods": [
+                        "WC_POD_COPY_AP","WC_POD_GK"
+                    ],
+                    "plants": [
+                        "TRN1"
+                    ]
                 }
             ]
         }

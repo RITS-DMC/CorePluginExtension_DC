@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (PluginPropertyEditorExtension) {
     "use strict";
 
-    return PluginPropertyEditorExtension.extend("sap.dm.custom.plugin.worklistfilterandsort.PropertyEditorExtension", {
+    return PluginPropertyEditorExtension.extend("rits.ext.custom.plugins.PropertyEditorExtension", {
         constructor: function (oExtensionUtilities) {
             this._oExtensionUtilities = oExtensionUtilities;
         },

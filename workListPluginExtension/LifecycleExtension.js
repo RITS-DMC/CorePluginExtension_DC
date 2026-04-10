@@ -8,7 +8,7 @@ sap.ui.define([
 ], function (PluginControllerExtension, OverrideExecution, LifecycleConstants) {
     "use strict";
 
-    return PluginControllerExtension.extend("sap.dm.custom.plugin.worklistfilterandsort.LifecycleExtension", {
+    return PluginControllerExtension.extend("rits.ext.custom.plugins.LifecycleExtension", {
         constructor: function (oExtensionUtilities) {
             this._oExtensionUtilities = oExtensionUtilities;
         },
